@@ -1,0 +1,13 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+
+
+}
+
+.navBar-container {
+    border: 2px solid pink;
+}
