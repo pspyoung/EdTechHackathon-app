@@ -4,6 +4,7 @@ import Assessments from '../Assessments/Assessments';
 import Meditate from '../Meditate/Meditate';
 import Timer from '../Timer/Timer';
 import User from '../User/User';
+import Homepage from '../../Homepage/Homepage';
 
 function Navbar(props) {
 	return (
@@ -13,6 +14,7 @@ function Navbar(props) {
 			<Meditate />
 			<Timer />
 			<User />
+			<Homepage />
 		</div>
 	);
 }
