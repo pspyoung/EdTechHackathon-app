@@ -9,5 +9,12 @@
 }
 
 .navBar-container {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }

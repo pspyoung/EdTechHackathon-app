@@ -22,6 +22,7 @@ function Navbar(props) {
 					<h4>User</h4>
 				</Link>
 			</div>
+			<img id="logo" src="https://i.imgur.com/0o3nQJ8.png" alt="soar-logo"/>
 		</nav>
 	);
 }
