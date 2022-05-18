@@ -38,7 +38,9 @@ function Timer() {
 				{/* <span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span> */}
 			</div>
 
-			<button onClick={() => setTimerOn(true)}>Set Time to 20 Minutes</button>
+			<button className="timerTextButton" onClick={() => setTimerOn(true)}>
+				Set Time to 20 Minutes
+			</button>
 			<br></br>
 
 			<button onClick={() => setTimerOn(true)}>
