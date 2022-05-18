@@ -1,0 +1,138 @@
+
+.box {
+    height: 200px;
+    width: 100px;
+    padding: auto;
+    margin: 10px;
+}
+
+.dashboard {
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    /* padding: auto; */
+    margin: 20px;
+    margin-bottom: 150px;
+}
+
+#tools {
+    position: absolute;
+    /* left: 85px; */
+    margin-left: 4%;
+}
+
+#happy-bird-icon {
+    position: absolute;
+    /* right: 160px; */
+    right: 400px; 
+    height: 110px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 63px;
+    
+
+    color: #070559;
+}
+
+.activitiesHeader {
+    text-align: left;
+    margin-left: 4%; 
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+#hello-message {
+    background-color: #070559;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    line-height: 40px;
+    font-size: 25px;
+    width: 400px;
+    margin-left: 4%;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    border-radius: 10px;
+    /* margin-right: 50px; */
+    text-align: left;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #070559;
+    position: absolute;
+    left: 412px;
+}
+
+
+.toolsContainer {
+    display: flex;
+    
+}
+
+.boxTools {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    width: 45%;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFEFDB;
+}
+
+
+.activitiesContainer {
+  display: flex;
+}
+
+.boxActivities {
+    margin: 4%; 
+    width: 33%; 
+    border-radius: 5%;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFEFDB;
+}
+
+.dashboardBox {
+    font-weight: bold; 
+}
+
+h3 {
+    text-align: left; 
+}
+
+.box:hover{
+        background-color: #D5C5AE;
+
+}
+
+.links:link{
+    text-decoration: none;
+}
+
+.dashboardBox {
+    text-align: left; 
+    color: #070559;
+}
+
+.dashboardPicsActivities {
+    text-align: right; 
+}
+
+.dashboardBody {
+    display: flex; 
+}
+
+.dashboardBoxHeader {
+    color: #070559;
+}

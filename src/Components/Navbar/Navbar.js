@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Navbar(props) {
 	return (
 		<nav className="navBar-container">
-			<div className="navBar">
+			{/* <div className="navBar">
 				<Link to="/">
 					<h4>Go Home</h4>
 				</Link>
@@ -21,7 +21,16 @@ function Navbar(props) {
 				<Link to="/User">
 					<h4>User</h4>
 				</Link>
-			</div>
+			</div> */}
+			<Link to="/">
+				<img id="logo" src="https://i.imgur.com/0o3nQJ8.png" alt="soar-logo" />
+			</Link>
+
+			<img
+				id="user-icon"
+				src="https://i.imgur.com/HH8CMzy.png"
+				alt="user-icon"
+			/>
 		</nav>
 	);
 }
