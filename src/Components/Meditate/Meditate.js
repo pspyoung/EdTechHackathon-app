@@ -4,7 +4,7 @@ import { Card, Button } from 'react-bootstrap';
 
 function Meditate(props) {
 	return (
-		<div className="App bg-dark">
+		<div className="App">
 			<div class="container h-100">
 				<div class="row align-items-center h-100">
 					<div class="col-6 mx-auto">
@@ -13,14 +13,14 @@ function Meditate(props) {
 							style={{ width: '25rem', padding: ' 30px 30px 0 30px' }}>
 							<Card.Img
 								variant="top"
-								src="/assets/heart.png"
+								src="https://i.imgur.com/j0AXZ9P.png"
 								style={{ backgroundColor: '#FFEFDB', padding: '20px' }}
 							/>
 							<Card.Body>
 								<Card.Title>Box Breathing Technique</Card.Title>
 								<Card.Img
 									variant="d"
-									src="/Assets/music_play_time.png"
+									src="https://i.imgur.com/vvYmhOg.png"
 									style={{ objectFit: 'contain', width: '300px' }}
 								/>
 								<Button variant="clear">
