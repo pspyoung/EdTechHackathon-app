@@ -1,43 +1,56 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Timer.css';
 
 function Timer() {
-	const [counter, setCounter] = useState(60);
+	const [time, setTime] = useState(0);
 	const [timerOn, setTimerOn] = useState(false);
 
 	useEffect(() => {
-		counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
-	}, [counter]);
+		let interval;
+		if (timerOn) {
+			interval = setInterval(() => {
+				// if (time >= 1) {
+				// }
+
+				setTime((prevTime) => prevTime + 1000);
+			}, 1000);
+
+			if (timerOn && time >= 3) {
+				setTimerOn(false);
+				setTime(0);
+				// clearInterval(interval);
+			}
+		}
+
+		return () => clearInterval(interval);
+	}, [timerOn]);
 
 	return (
-		<div className="App">
-			<div>Countdown: {counter}</div>
+		<div className="Timer">
+			<img src="/Assets/Timer.png" />
+			<div className="timeUnits">
+				{/* Minutes */}
+				<span>{('0' + Math.floor((time / 60000) % 100)).slice(-2)}:</span>
+				{/* Seconds */}
+				<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}</span>
+				{/* Milliseconds */}
+				{/* <span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span> */}
+			</div>
+
+			<button onClick={() => setTimerOn(true)}>Set Time to 20 Minutes</button>
+			<br></br>
+
 			<button onClick={() => setTimerOn(true)}>
 				<i className="fa-solid fa-play"></i>
 			</button>
-			<button onClick={() => setTimerOn(false)}>Stop</button>
-			<button onClick={() => setTimerOn(true)}>Resume</button>
-			<button onClick={() => counter(0)}>Reset</button>
+			<button onClick={() => setTimerOn(false)}>
+				<i className="fa-solid fa-pause"></i>
+			</button>
+			<button onClick={() => setTime(0)}>
+				<i className="fa-solid fa-rotate-left"></i>
+			</button>
 		</div>
-
-		// <div className="Timer">
-		// 	<div className="timeUnits">
-		// 		{/* Minutes */}
-		// 		<span>{('0' + Math.floor((time / 60000) % 100)).slice(-2)}:</span>
-		// 		{/* Seconds */}
-		// 		<span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-		// 		{/* Milliseconds */}
-		// 		<span>{('0' + Math.floor((time / 10) % 100)).slice(-2)}</span>
-		// 	</div>
-
-		// <button onClick={() => setTimerOn(true)}>
-		// 	<i className="fa-solid fa-play"></i>
-		// </button>
-		// <button onClick={() => setTimerOn(false)}>Stop</button>
-		// <button onClick={() => setTimerOn(true)}>Resume</button>
-		// <button onClick={() => setTime(0)}>Reset</button>
-		// </div>
 	);
 }
 

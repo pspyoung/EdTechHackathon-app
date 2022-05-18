@@ -1,0 +1,31 @@
+
+.box {
+    height: 200px;
+    width: 100px;
+    padding: auto;
+    margin: 20px;
+}
+
+.dashboard {
+    margin: auto;
+}
+
+.header {
+    /* display: inline-flex; */
+}
+
+h2 {
+    /* position: absolute;
+    width: 116px;
+    height: 63px;
+    left: 67px;
+    top: 413px; */
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 63px;
+
+    color: #070559;
+}
