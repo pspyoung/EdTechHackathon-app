@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import Homepage from './Homepage/Homepage';
+import Dashboard from './Dashboard/Dashboard';
 import Assessments from './Components/Assessments/Assessments';
 import Meditate from './Components/Meditate/Meditate';
 import Timer from './Components/Timer/Timer';
@@ -12,7 +12,7 @@ function App() {
 		<div className="App">
 			<Navbar />
 			<Routes>
-				<Route path="/" element={<Homepage />} />
+				<Route path="/" element={<Dashboard />} />
 				<Route path="/Assessments" element={<Assessments />} />
 				<Route path="/Meditate" element={<Meditate />} />
 				<Route path="/Timer" element={<Timer />} />
