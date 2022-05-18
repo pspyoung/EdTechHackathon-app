@@ -17,4 +17,14 @@
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    margin-top: 20px;
+}
+
+#user-icon {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    height: 75px;
+    width: 75px;
 }

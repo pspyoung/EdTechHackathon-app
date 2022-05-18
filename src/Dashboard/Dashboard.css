@@ -3,7 +3,7 @@
     height: 200px;
     width: 100px;
     padding: auto;
-    margin: 20px;
+    margin: 10px;
 }
 
 .dashboard {
@@ -34,10 +34,17 @@ h2 {
     font-weight: 400;
     font-size: 53px;
     line-height: 63px;
+    
 
     color: #070559;
 }
 
+.activitiesHeader {
+    text-align: left;
+    margin-left: 4%; 
+    margin-top: 2%;
+    margin-bot: 2%; 
+}
 #hello-message {
     background-color: #070559;
     color: white;
@@ -61,7 +68,7 @@ h2 {
     border-right: 10px solid transparent;
     border-top: 20px solid #070559;
     position: absolute;
-    left: 420px;
+    left: 424px;
 }
 
 
@@ -71,7 +78,9 @@ h2 {
 }
 
 .boxTools {
-    margin: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
     width: 45%;
     border-radius: 5%;
     border: none;
@@ -106,8 +115,13 @@ h3 {
 
 }
 
+.links:link{
+    text-decoration: none;
+}
+
 .dashboardBox {
     text-align: left; 
+    color: #070559;
 }
 
 .dashboardPicsActivities {
@@ -116,4 +130,8 @@ h3 {
 
 .dashboardBody {
     display: flex; 
+}
+
+.dashboardBoxHeader {
+    color: #070559;
 }

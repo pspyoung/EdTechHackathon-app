@@ -33,29 +33,35 @@ function Dashboard() {
 						</div>
 					</button>
 					<button className="box boxTools">
-						<h3 className="dashboardBoxHeader">My Timer</h3>
-						<p className="dashboardBox">
-							Make the most of your study time with our Pomodoro method
-						</p>
-						<Link to="/Timer">
-							<img className="dashboardPics " src="/Assets/Pomodoro.png" />
+						<Link className="links" to="/Timer">
+							<h3 className="dashboardBoxHeader">My Timer</h3>
+
+							<div className="dashboardBody">
+								<p className="dashboardBox">
+									Make the most of your study time with our Pomodoro method
+								</p>
+
+								<img className="dashboardPics " src="/Assets/Pomodoro.png" />
+							</div>
 						</Link>
 					</button>
 				</div>
 			</div>
 			<div>
-				<h2>Activities</h2>
+				<h2 className="activitiesHeader">Activities</h2>
 				<div className="activitiesContainer">
 					<button className="box boxActivities">
 						<h4 className="dashboardBoxHeader">Daily Doodle</h4>
 						<img className="dashboardPics" src="/Assets/Doodle.png" />
 					</button>
+
 					<button className="box boxActivities">
-						<h4 className="dashboardBoxHeader">Relax and Reinforce</h4>
-						<Link to="/Meditate">
+						<Link className="links" to="/Meditate">
+							<h4 className="dashboardBoxHeader">Relax and Reinforce</h4>
 							<img className="dashboardPics" src="/Assets/Relax.png" />
 						</Link>
 					</button>
+
 					<button className=" box boxActivities">
 						<h4 className="dashboardBoxHeader">Short Stories</h4>
 						<img className="dashboardPics" src="/Assets/Stories.png" />
