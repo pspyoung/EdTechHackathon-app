@@ -17,7 +17,7 @@ Our app aims to provide children with ADHD ways to help them stay focused, gain 
 
 # The technologies we used to create this app are:
 UX/UI Team:
-- Figma, < fill in more here! >
+- Figma
 
 Software Engineering Team:
 - Express
@@ -26,7 +26,7 @@ Software Engineering Team:
 - React
 - JavaScript
 - CSS
-- Heroku (confirm!!)
+- Heroku
 
 ----------------
 
